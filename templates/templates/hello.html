@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}
+{{ super() }} - {{ title }}
+{% endblock %}
+
+{% block content %}
+
+
+<form method="get" class="input_form container" action={{ action }}>
+    <h4 class="container">Логин: {{ user }}</h4>
+    <h4 class="container">Email: {{ email }}</h4>
+    <input type="submit" value="Выйти">
+</form>
+{% endblock %}
