@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}
+{{ super() }} - {{ title }}
+{% endblock %}
+
+{% block content %}
+<h4 class="container">Логин: {{ username }}</h4>
+<h4 class="container">Фамилия: {{ surname }}</h4>
+<h4 class="container">Имя: {{ name }}</h4>
+<h4 class="container">Отчество: {{ patronymic }}</h4>
+<h4 class="container">Email: {{ email }}</h4>
+<h4 class="container">Дата регистрации: {{ create_at }}</h4>
+
+{% endblock %}
